@@ -1,5 +1,5 @@
 ---
 deployment:
     tasks:
-        - export DEPLOYPATH=/home2/wheke/nodeapps/
-        - /bin/cp -R app4 $DEPLOYPATH
+        - export DEPLOYPATH=/home2/wheke/public/
+        - /bin/rsync -av build/ $DEPLOYPATH
