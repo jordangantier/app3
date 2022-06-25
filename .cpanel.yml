@@ -1,5 +1,5 @@
 ---
 deployment:
     tasks:
-        - export DEPLOYPATH=/home/wheke/public_html/app3/
-        - /bin/cp * $DEPLOYPATH
+        - export DEPLOYPATH=/home/example/public_html/
+        - /bin/cp -R app3 $DEPLOYPATH
