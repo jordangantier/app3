@@ -1,6 +1,6 @@
 ---
 deployment:
     tasks:
-        - export DEPLOYPATH=/home2/wheke/public_html/
-        -export REPOPATH=/home2/wheke/repositories/app3/build
+        - export DEPLOYPATH=/mnt/home2/wheke/public_html/
+        - export REPOPATH=/mnt/home2/wheke/repositories/app3/build
         - /bin/cp -R $REPOPATH $DEPLOYPATH

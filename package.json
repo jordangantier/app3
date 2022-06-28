@@ -1,8 +1,10 @@
 {
 	"name": "app3",
-	"version": "0.0.1",
+	"version": "1.0.12",
+	"homepage": "https://wheke.dev/app3",
+	"main": "index.js",
 	"scripts": {
-		"dev": "svelte-kit dev",
+		"dev": "svelte-kit dev --host",
 		"build": "svelte-kit build",
 		"package": "svelte-kit package",
 		"preview": "svelte-kit preview",
@@ -22,7 +24,12 @@
 	"dependencies": {
 		"@fontsource/fira-mono": "^4.5.0",
 		"@sveltejs/adapter-node": "^1.0.0-next.78",
-		"@sveltejs/adapter-static": "^1.0.0-next.34",
 		"cookie": "^0.4.1"
+	},
+	"config": {
+		"svelte": {
+			"host": "127.0.0.1",
+			"port": "3000"
+		}
 	}
 }
